@@ -8,10 +8,6 @@ async function main(containerName, blobName) {
 
     const account = process.env.ACCOUNT_NAME || "";
     const accountKey = process.env.ACCOUNT_KEY || "";
-    const containerName = 'brieffile';
-    const blobName = 'test.png'
-
-
 
     const sharedKeyCredential = new StorageSharedKeyCredential(account, accountKey);
     const blobServiceClient = new BlobServiceClient(
